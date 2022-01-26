@@ -78,16 +78,17 @@ WSGI_APPLICATION = 'djangoproje.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-import psycopg2
+
+
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresgl_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME':  'mydb',
         'USER':  'darkk_bluee',
-        'PASSWORD':  '6522683OWEN',
+        'PASSWORD':  '6522683owen',
         'HOST':  'localhost',
-        'PORT':  '',
+        'PORT':  '5432',
     }
 }
 
