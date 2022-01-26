@@ -26,7 +26,7 @@ SECRET_KEY = 'tyveiqba_oc@l22swqjw-6@qu1!@!)#j@0z4#g$#gs5jzjg-_t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['35.230.135.230']
 
 
 # Application definition
@@ -85,8 +85,8 @@ DATABASES = {
         'NAME':  'mydb',
         'USER':  'darkk_bluee',
         'PASSWORD':  '6522683OWEN',
-        'HOST':  'db.sqlite3',
-        'PORT':  'db.sqlite3',
+        'HOST':  'localhost',
+        'PORT':  '',
     }
 }
 
@@ -128,6 +128,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'static') # yeni sa
+STATIC_ROOT = os.path.join(BASE_DIR,'static/') # yeni sa
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media') # yeni sa
